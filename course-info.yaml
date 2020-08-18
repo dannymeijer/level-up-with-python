@@ -2,8 +2,8 @@ title: Level Up with Python
 language: English
 summary: |-
   Introductory Python course.
-  Created: Aug 17, 2020, 9:17:26 AM.
+  Created: Aug 16, 2020, 10:17:26 AM.
 programming_language: Python
 environment: unittest
 content:
-- lesson1
+- lessons
