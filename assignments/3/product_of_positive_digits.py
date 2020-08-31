@@ -13,16 +13,8 @@ For example:
 
 Hint: use the math library
 """
-# Suggested solution
-import math
 
-
-def product_of_positive_digits(numbers: int) -> int:
-    """ Make a list of the numbers
-    excludes zeroes and uses math.prod to compute the product
-    """
-    return math.prod([int(n) for n in str(numbers) if n != "0"])
-
+...
 
 # tests
 if __name__ == '__main__':
