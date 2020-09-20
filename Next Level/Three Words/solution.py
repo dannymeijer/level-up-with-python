@@ -1,11 +1,5 @@
 def has_three_words(words: str) -> bool:
-    bag_o_words, counter = words.split(), 0
-    for word in bag_o_words:
-        counter = 0 if not word.isalpha() else counter + 1
-        if counter == 3:
-            return True
-    else:
-        return False
+    ...
 
 
 # These "asserts" using only for self-checking and not necessary for auto-testing

@@ -26,18 +26,18 @@ Precondition:
 """
 
 
-def left_join(phrases: tuple) -> str:
-    # your code goes here
+def has_three_words(words: str) -> bool:
     ...
 
 
+# These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
     print('Example:')
-    print(left_join(("left", "right", "left", "stop")))
+    print(has_three_words("Hello World hello"))
     
-    # These "asserts" using only for self-checking and not necessary for auto-testing
-    assert left_join(("left", "right", "left", "stop")) == "left,left,left,stop", "All to left"
-    assert left_join(("bright aright", "ok")) == "bleft aleft,ok", "Bright Left"
-    assert left_join(("brightness wright",)) == "bleftness wleft", "One phrase"
-    assert left_join(("enough", "jokes")) == "enough,jokes", "Nothing to replace"
+    assert has_three_words("Hello World hello") is True, "Hello"
+    assert has_three_words("He is 123 man") is False, "123 man"
+    assert has_three_words("1 2 3 4") is False, "Digits"
+    assert has_three_words("bla bla bla bla") is True, "Bla Bla"
+    assert has_three_words("Hi") is False, "Hi"
     print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
