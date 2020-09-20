@@ -1,0 +1,48 @@
+<img class="for_info_only half" title="slice" src="https://py-static.checkio.org/media/task/media/6ab3789385b44e3596d81b1ae6fb0134/slice.png" alt="slice"
+     style="float: left; "/>
+
+
+<p>
+    You are given an array of integers. You should find the sum of the integers with even indexes (0th, 2nd, 4th...). Then multiply this summed number and the final element of the array together. 
+     Don't forget that the first element has an index of 0.
+</p>
+
+<p>
+    For an empty array, the result will always be 0 (zero).
+</p>
+
+<p>
+    <strong>Input: </strong> A list of integers.
+</p>
+
+<p>
+    <strong>Output: </strong> The number as an integer.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">
+checkio([0, 1, 2, 3, 4, 5]) == 30
+checkio([1, 3, 5]) == 30
+checkio([6]) == 36
+checkio([]) == 0
+</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    Indexes and slices are important elements of coding. This will come in handy down the
+    road!
+</p>
+
+<p>
+    <strong>Precondition: </strong>
+    0 &le; len(array) &le; 20<br>
+    all(isinstance(x, int) for x in array)<br>
+    all(-100 &lt; x &lt; 100 for x in array)<br>
+</p>
+<p><a href="https://py.checkio.org/mission/even-last/publications/category/clear">View solutions</a></p>
+<p><a href="https://py.checkio.org/en/mission/even-last">See the task on CheckiO</a></p>

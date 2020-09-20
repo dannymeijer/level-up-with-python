@@ -1,0 +1,29 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def checkio(words: str) -> bool:\n    bag_o_words, counter = words.split(),\
+    \ 0\n    for word in bag_o_words:\n        if word.isalpha():\n            counter\
+    \ += 1\n        else:\n            counter = 0\n        if counter == 3:\n   \
+    \         return True\n    else:\n        return False\n\n# These \"asserts\"\
+    \ using only for self-checking and not necessary for auto-testing\nif __name__\
+    \ == '__main__':\n    print('Example:')\n    print(checkio(\"Hello World hello\"\
+    ))\n    \n    assert checkio(\"Hello World hello\") is True, \"Hello\"\n    assert\
+    \ checkio(\"He is 123 man\") is False, \"123 man\"\n    assert checkio(\"1 2 3\
+    \ 4\") is False, \"Digits\"\n    assert checkio(\"bla bla bla bla\") is True,\
+    \ \"Bla Bla\"\n    assert checkio(\"Hi\") is False, \"Hi\"\n    print(\"Coding\
+    \ complete? Click 'Check' to review your tests and earn cool rewards!\")\n"
+  learner_created: false
+status: Solved
+code: "def checkio(words: str) -> bool:\n    bag_o_words, counter = words.split(),\
+  \ 0\n    for word in bag_o_words:\n        if word.isalpha():\n            counter\
+  \ += 1\n        else:\n            counter = 0\n        if counter == 3:\n     \
+  \       return True\n    else:\n        return False\n\n# These \"asserts\" using\
+  \ only for self-checking and not necessary for auto-testing\nif __name__ == '__main__':\n\
+  \    print('Example:')\n    print(checkio(\"Hello World hello\"))\n    \n    assert\
+  \ checkio(\"Hello World hello\") is True, \"Hello\"\n    assert checkio(\"He is\
+  \ 123 man\") is False, \"123 man\"\n    assert checkio(\"1 2 3 4\") is False, \"\
+  Digits\"\n    assert checkio(\"bla bla bla bla\") is True, \"Bla Bla\"\n    assert\
+  \ checkio(\"Hi\") is False, \"Hi\"\n    print(\"Coding complete? Click 'Check' to\
+  \ review your tests and earn cool rewards!\")\n"
+seconds_from_change: 68057

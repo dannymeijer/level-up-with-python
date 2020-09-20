@@ -1,0 +1,40 @@
+<p>
+    Not all of the elements are important. What you need to do here is to remove from the list all of the elements before the given one.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="https://py-static.checkio.org/media/task/media/a14549235d42428ebb3820919a3fde62/example.png" alt="example" style="max-height: 83px"/>
+</p>
+
+<p>
+    For the illustration we have a list [3, 4, 5] and we need to remove all elements that go before 3 - which is 1 and 2.
+</p>
+
+<p>
+	We have two edge cases here: (1) if a cutting element cannot be found, then the list shoudn't be changed. (2) if the list is empty, then it should remain empty.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> List and the border element.
+</p>
+
+<p>
+    <strong>Output: </strong> Iterable (tuple, list, iterator ...).
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+
+<pre class="brush: python">remove_all_before([1, 2, 3, 4, 5], 3) == [3, 4, 5]
+remove_all_before([1, 1, 2, 2, 3, 3], 2) == [2, 2, 3, 3]
+</pre>
+
+</div>
+<p><a href="https://py.checkio.org/mission/remove-all-before/publications/category/clear">View solutions</a></p>
+<p><a href="https://py.checkio.org/en/mission/remove-all-before">See the task on CheckiO</a></p>

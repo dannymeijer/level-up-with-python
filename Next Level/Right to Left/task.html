@@ -1,0 +1,58 @@
+<div class="story">
+    <p>"For centuries, left-handers have suffered unfair discrimination in a world designed for right-handers."
+        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+
+    <p>
+        "Most humans (say 70 percent to 95 percent) are right-handed, a minority (say 5 percent to 30 percent)
+        are left-handed, and an indeterminate number of people are probably best described as ambidextrous."
+        <br>Scientific American. www.scientificamerican.com</p>
+
+</div>
+
+<p>
+    One of the robots is charged with a simple task:
+    to join a sequence of strings into one sentence to produce instructions
+    on how to get around the ship.
+    But this robot is left-handed and has a tendency to joke around and confuse its right-handed friends.
+</p>
+<p>
+    You are given a sequence of strings.
+    You should join these strings into a chunk of text where the initial strings are separated by commas.
+    As a joke on the right handed robots, you should replace all cases of the words "right" with the word "left",
+    even if it's a part of another word. All strings are given in lowercase.
+</p>
+
+
+<p>
+    <strong>Input: </strong> A sequence of strings.
+</p>
+
+<p>
+    <strong>Output: </strong> The text as a comma-separated string.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    
+<pre class="brush: python">left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
+</pre>
+
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    This is a simple example of operations using strings and sequences.
+</p>
+
+<p>
+    <strong>Precondition:</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
+</p>
+<p><a href="https://py.checkio.org/mission/right-to-left/publications/category/clear">View solutions</a></p>
+<p><a href="https://py.checkio.org/en/mission/right-to-left">See the task on CheckiO</a></p>

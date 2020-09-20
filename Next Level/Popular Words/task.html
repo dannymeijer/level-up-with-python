@@ -1,0 +1,59 @@
+<!-- Describe task in general -->
+
+<p>
+    In this mission your task is to determine the popularity of certain words in the text. 
+</p>
+
+<p>
+    At the input of your function are given 2 arguments: the text and the array of words the popularity of which you need to determine. 
+</p>
+
+<p>When solving this task pay attention to the following points:</p>
+
+<ul>
+    <li>The words should be sought in all registers. This means that if you need to find a word "one" then words like "one", "One", "oNe", "ONE" etc. will do.</li>
+    <li>The search words are always indicated in the lowercase.</li>
+    <li>If the word wasn’t found even once, it has to be returned in the dictionary with  0 (zero) value.</li>
+</ul>
+
+
+<p>
+    <strong>Input: </strong> The text and the search words array.
+</p>
+
+<p>
+    <strong>Output: </strong> The dictionary where the search words are the keys and values are the number of times when those words are occurring in a given text. 
+</p>
+
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+
+<pre class="brush: python">popular_words('''
+When I was One
+I had just begun
+When I was Two
+I was nearly new
+''', ['i', 'was', 'three', 'near']) == {
+    'i': 4,
+    'was': 3,
+    'three': 0,
+    'near': 0
+}
+
+</pre>
+
+</div>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    The input text will consists of English letters in uppercase and lowercase and whitespaces.
+</p>
+<p><a href="https://py.checkio.org/mission/popular-words/publications/category/clear">View solutions</a></p>
+<p><a href="https://py.checkio.org/en/mission/popular-words">See the task on CheckiO</a></p>
