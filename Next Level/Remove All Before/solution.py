@@ -23,13 +23,10 @@ def remove_all_before(items: list, border: int) -> Iterable:
     """
     # handle edge cases
     # - if the list is empty, then it should remain empty
-    if len(items) == 0:
-        return []
     # - if a cutting element cannot be found, then the list should
     #   not be changed
-    elif border not in items:
+    if len(items) == 0 or border not in items:
         return items
-
     # find index of border, slice it, and return
     else:
         return items[items.index(border):]
@@ -39,9 +36,8 @@ def remove_all_before_shorter(items: list, border: int) -> Iterable:
     """ Shorter alternative to remove_all_before"""
     return (
         # if the list is empty, it remains empty
-        [] if len(items) == 0
         # if a cutting element cannot be found, the list is not changed
-        else items if border not in items
+        items if len(items) == 0 or border not in items
         # else find index of border, slice it, and return
         else items[items.index(border):]
     )
