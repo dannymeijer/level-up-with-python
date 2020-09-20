@@ -19,7 +19,7 @@ def popular_words(text: str, words: List[str]) -> Dict[str, int]:
     # To enable `search in all registers`, everything is lowercase
     bag_o_words = text.lower().split()
     return {  # search results per word
-        word: bag_o_words.count(word) for word in {w.lower() for w in words}
+        word: bag_o_words.count(word) for word in words
     }
 
 
